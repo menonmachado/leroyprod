@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
+use App\Product;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,24 +14,32 @@ use Illuminate\Http\Request;
 |
 */
 
-// Route::middleware('auth:api')->get('/user', function (Request $request) {
-//     return $request->user();
-// });
-
-
 Route::get('product', function() {
-    // If the Content-Type and Accept headers are set to 'application/json', 
-    // this will return a JSON structure. This will be cleaned up later.
     return Product::all();
 });
-
-
-Route::post('product', function(Request $request) {
-    return Product::insertOrUpdate($request->all);
+ 
+Route::get('product/{id}', function($id) {
+    return Product::find($id);
 });
 
-
-Route::delete('product', function() {
-    Product::delete();
+Route::delete('product/{id}', function($id) {
+    Product::find($id)->delete();
     return 204;
-})
+});
+
+Route::post('product', function(Request $request) {
+    return Product::create($request->all);
+});
+
+// Route::put('product/{id}', function(Request $request, $id) {
+//     $product = Product::findOrFail($id);
+//     $product->update($request->all());
+
+//     return $product;
+// });
+
+Route::get('product', 'ProductController@index');
+Route::get('product/{id}', 'ProductController@show');
+Route::delete('product/{id}', 'ProductController@delete');
+Route::post('product', 'ProductController@store');
+// Route::put('product/{id}', 'ProductController@update');
