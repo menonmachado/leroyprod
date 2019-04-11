@@ -5,18 +5,18 @@ By Menon Schlisting Machado.
 Contact: <menonmachado@gmail.com> .
 
 #### DEVELOPMENT STATUS
-UNDER DEVELOPMENT.
+Under development.
 
 #### DEVELOPMENT DETAIL (checked == done)
-- [x] DEVELOPMENT ENVIRONMENT PREPARATION (WEBSERVER, LARAVEL, TOOLS, ETC);
-- [x] LIST ALL PRODUCTS METHOD ON PRODUCT_CONTROLLER;
-- [x] LIST ONE PRODUCT METHOD ON PRODUCT_CONTROLLER;
-- [x] DELETE PRODUCT METHOD ON PRODUCT_CONTROLLER;
-- [x] UPDATE PRODUCT METHOD ON PRODUCT_CONTROLLER;
-- [ ] INSERT PRODUCTS METHOD (USING SPREADSHEET ON PRODUCT_CONTROLLER);
-- [ ] STORE FILE (QUEUE) METHOD ON PRODUCT_CONTROLLER;
-- [ ] CHECK QUEUE STATUS METHOD ON PRODUCT_CONTROLLER;
-- [ ] GENERAL PROJECT DOCUMENTATION;
+- [x] development environment preparation (webserver, laravel, tools, etc);
+- [x] list all products method on productController;
+- [x] list one product method on productController;
+- [x] delete product method on productController;
+- [x] update product method on productController;
+- [ ] insert products method (using spreadsheet) on productController;
+- [ ] store file (queued) method on productController;
+- [ ] queue status check method on productController;
+- [ ] general project documentation;
 
 ### DEVELOPMENT INFORMATION
 The development of this code is being detailed by each Git commit to the project. Additional details are on this 'readme.md' file.
