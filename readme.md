@@ -18,7 +18,7 @@ Under development.
 - [ ] queue status check method on productController;
 - [ ] general project documentation;
 
-### DEVELOPMENT INFORMATION
+#### DEVELOPMENT INFORMATION
 The development of this code is being detailed by each Git commit to the project. Additional details are on this 'readme.md' file.
 
 #### DATABASE CONFIGURATION ON .ENV FILE
