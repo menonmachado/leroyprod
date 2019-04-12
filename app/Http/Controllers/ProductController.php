@@ -26,17 +26,17 @@ class ProductController extends Controller
         return 204;
     }
 
-    public function store(Request $request)
-    {
-    	return Product::create($request->all());
+    public function update(Request $request, $id)
+    {    
+        $product = Product::findOrFail($id);
+        $product->update($request->all());
+
+        return $product;
     }
 
-    // public function update(Request $request, $id)
-    // {
-    //     $product = Product::findOrFail($id);
-    //     $product->update($request->all());
-
-    //     return $product;
-    // }
-
+    public function spreadsheet(Request $request)
+    {
+        echo  532452354324; exit;
+    	return $request->file('file');
+    }
 }
