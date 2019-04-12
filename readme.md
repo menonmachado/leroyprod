@@ -1,4 +1,3 @@
-
 ## LEROY MERLIN CODE TEST
 
 By Menon Schlisting Machado.
@@ -14,7 +13,7 @@ Under development.
 - [x] list all products method on productController;
 - [x] list one product method on productController;
 - [x] delete product method on productController;
-- [ ] update product method on productController;
+- [x] update product method on productController;
 - [ ] insert products method (using spreadsheet) on productController;
 - [ ] queue status check method on productController;
 - [ ] general project documentation;
@@ -30,7 +29,3 @@ Under development.
 #### DATABASE DUMP IN ROOT FOLDER FOR TESTING PURPOSES
 - leroyprod_structure_only.slq
 - leroyprod_structure_and_data.slq
-
-
-
- 	

@@ -26,6 +26,15 @@ class ProductController extends Controller
         return 204;
     }
 
+    public function store(Request $request)
+    {
+        if($request->file('file')){
+            echo '<pre>'; print_r($request->file('file')); exit;
+        }
+
+        return Product::create($request->all());
+    }
+
     public function update(Request $request, $id)
     {    
         $product = Product::findOrFail($id);
@@ -34,9 +43,4 @@ class ProductController extends Controller
         return $product;
     }
 
-    public function spreadsheet(Request $request)
-    {
-        echo  532452354324; exit;
-    	return $request->file('file');
-    }
 }
